@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AninisHub - Digital Marketing & Graphic Designing Agency</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #2A4365;
+            --secondary: #805AD5;
+            --accent: #F687B3;
+            --background: #F7FAFC;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-blue-900 heading-font">AninisHub - Digital Marketing & Graphic Designing Agency</div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-900 transition-colors">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-900 transition-colors">Services</a>
+                    <a href="#work" class="text-gray-700 hover:text-blue-900 transition-colors">Portfolio</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-900 transition-colors">Contact</a>
+                </div>
+                
+                <button class="bg-blue-900 text-white px-6 py-2 rounded-full hidden md:block hover:bg-blue-800 transition-all">
+                    Get Quote
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h1 class="text-5xl font-bold mb-6 text-blue-900 heading-font leading-tight">
+                         Transforming Brands with Graphic Design & Digital Marketing
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-8">
+                         We bring your vision to life through creative design and smart marketing solutions. Whether you need eye-catching designs or effective digital campaigns, we’re here to take your brand to the next level.
+                    </p>
+                    <!-- <div class="flex space-x-4">
+                        <button class="bg-blue-900 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition-all">
+                            Start Project
+                        </button>
+                        <button class="border-2 border-blue-900 text-blue-900 px-8 py-3 rounded-full hover:bg-blue-900 hover:text-white transition-all">
+                            View Work
+                        </button>
+                    </div> -->
+                </div>
+                <div data-aos="fade-left" class="relative">
+                    <img src="images/aninis_hub.jpg" alt="AninisHub Image" class="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-blue-900 font-semibold">Our Expertise</span>
+                <h2 class="text-4xl font-bold mb-4 heading-font text-gray-900">Creative Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    We offer comprehensive creative solutions tailored to elevate your brand
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Graphic Design -->
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-all" data-aos="fade-up">
+                    <div class="w-16 h-16 bg-blue-900 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 heading-font">Graphic Design</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Brand Identity Design
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Print & Digital Design
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Social Media Graphics
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 heading-font">Digital Marketing</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-purple-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Social Media Marketing
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-purple-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Content Strategy
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-purple-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            SEO Optimization
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Brand Strategy -->
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-pink-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 heading-font">Brand Strategy</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Brand Development
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Market Research
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Brand Strategy
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-900 font-semibold">Our Portfolio</span>
+                <h2 class="text-4xl font-bold mb-4 heading-font">Featured Work</h2>
+                <p class="text-gray-600">Explore our latest projects and creative solutions</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/1.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/3.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/4.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/5.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/6.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/7.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/8.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/9.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/10.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/11.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/12.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/13.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/14.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/15.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div><div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/16.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/17.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/18.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/19.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/20.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/21.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/22.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/23.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/24.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div><div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/25.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div><div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/26.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div><div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/27.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div><div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/28.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div><div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/30.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div><div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up">
+                    <img src="images/31.jpg" alt="Project 1" 
+                         class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/90 opacity-0 group-hover:opacity-100 transition-all">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2 heading-font">Brand Identity</h3>
+                            <p class="text-sm">Branding & Design</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more portfolio items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                
+                <!-- Contact Information -->
+                <div class="space-y-8" data-aos="fade-left">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 heading-font text-blue-900">Get in Touch</h3>
+                        <p class="text-gray-600">Let's discuss your project and explore how we can help your business grow.</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                                <h4 class="font-semibold mb-1">Phone:&nbsp;&nbsp;</h4>
+                                <p class="text-gray-600">+91-7397672930</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                          d="M3 8l7.428 4.286a2 2 0 002.144 0L21 8M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8l-7.428 4.286a2 2 0 01-2.144 0L3 8z"/>
+                                </svg>
+                            </div>
+                             <h4 class="font-semibold mb-1">Email:&nbsp;&nbsp;</h4>
+                        <p class="text-gray-600">aninishub@gmail.com</p>
+                        </div>
+                        <!-- Add more contact info -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold heading-font mb-4">AninisHub</h3>
+                    <p class="text-blue-100">Creating digital excellence through design and strategy.</p>
+                </div>
+                <!-- Add more footer content -->
+            </div>
+            <div class="border-t border-blue-800 mt-12 pt-8 text-center text-blue-200">
+                <p>&copy; 2025 AninisHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

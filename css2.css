@@ -1,0 +1,4 @@
+.animated-gradient {
+    /* ... other properties ... */
+    animation: gradient 30s ease infinite; /* Slower animation */
+}
